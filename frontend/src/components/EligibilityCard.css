@@ -1,0 +1,119 @@
+.eligibility-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+  overflow: hidden;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status.approved {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+}
+
+.status.pending {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #666;
+  font-size: 14px;
+}
+
+.value {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.value.score {
+  color: #4caf50;
+}
+
+.value.risk {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.value.risk.low {
+  background: #e8f5e9;
+  color: #4caf50;
+}
+
+.value.risk.medium {
+  background: #fff3e0;
+  color: #ff9800;
+}
+
+.value.risk.high {
+  background: #ffebee;
+  color: #f44336;
+}
+
+.value.probability {
+  color: #667eea;
+  font-size: 16px;
+}
+
+.card-footer {
+  background: #f8f9fa;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.processing-time {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
